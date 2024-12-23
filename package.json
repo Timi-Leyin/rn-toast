@@ -1,0 +1,24 @@
+{
+  "name": "rn-toast",
+  "version": "1.0.0",
+  "description": "lightweight, customizable React Native library for creating elegant toast notifications in your applications. Designed to be simple and developer-friendly, it allows you to provide feedback to users seamlessly.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timi-Leyin/rn-toast.git"
+  },
+  "keywords": [
+    "react-native",
+    "toast",
+    "popup"
+  ],
+  "author": "Timi-Leyin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timi-Leyin/rn-toast/issues"
+  },
+  "homepage": "https://github.com/timi-Leyin/rn-toast#readme"
+}
