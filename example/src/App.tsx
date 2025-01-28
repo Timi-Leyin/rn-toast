@@ -1,20 +1,42 @@
-import { multiply } from 'rn-toast';
-import { Text, View, StyleSheet } from 'react-native';
-
-const result = multiply(3, 7);
+/* eslint-disable react-native/no-inline-styles */
+// eslint-disable
+import { toast, ToastProvider } from 'rn-toast';
+import { Button, SafeAreaView, View } from 'react-native';
+import { useState } from 'react';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <SafeAreaView
+      style={{
+        flex: 1,
+      }}
+    >
+      <ToastProvider
+        config={{
+          position: 'top',
+          duration: 5000,
+          stack: true,
+        }}
+      >
+        <Examples />
+      </ToastProvider>
+    </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const Examples = () => {
+  const [count, setCount] = useState(0);
+  const clickHandler = () => {
+    setCount(count + 1);
+    toast.show({
+      title: 'Hey there ' + count,
+      // type: 'info',
+    });
+  };
+
+  return (
+    <View>
+      <Button title="Click Me" onPress={clickHandler} />
+    </View>
+  );
+};

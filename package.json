@@ -137,6 +137,7 @@
           "quoteProps": "consistent",
           "singleQuote": true,
           "tabWidth": 2,
+          "endOfLine":"auto",
           "trailingComma": "es5",
           "useTabs": false
         }
@@ -183,5 +184,9 @@
     "languages": "js",
     "type": "library",
     "version": "0.47.0"
+  },
+  "dependencies": {
+    "iconsax-react-native": "^0.0.8",
+    "react-native-svg": "^15.11.1"
   }
 }
