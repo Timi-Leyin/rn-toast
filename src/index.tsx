@@ -11,13 +11,13 @@ import {
 } from 'react-native';
 import * as Icon from 'iconsax-react-native';
 
-interface ToastConfig {
+export interface ToastConfig {
   position?: 'top' | 'center' | 'bottom';
   duration?: number;
   stack?: boolean;
 }
-interface ToastOptions extends ToastConfig {
-  id: string;
+export interface ToastOptions extends ToastConfig {
+  readonly id: string;
   title: string;
   icon?: any;
   type?: 'success' | 'info' | 'error';
@@ -51,7 +51,7 @@ class ToastManager {
   }
 }
 
-export const toast = ToastManager.getInstance();
+const toast = ToastManager.getInstance();
 
 export const ToastProvider: React.FC<{
   children: React.ReactNode;
@@ -224,3 +224,7 @@ const styles = StyleSheet.create({
   // center: { top: '50%', transform: [{ translateY: -50 }] },
   bottom: { bottom: 50 },
 });
+
+export default (config: Omit<ToastOptions, 'id'>) => {
+  toast.show(config);
+};
