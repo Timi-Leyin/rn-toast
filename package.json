@@ -1,6 +1,6 @@
 {
   "name": "rn-toast",
-  "version": "0.1.0",
+  "version": "0.1.0-beta",
   "description": "coming-soon",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
