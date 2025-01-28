@@ -70,6 +70,7 @@
     "@release-it/conventional-changelog": "^9.0.2",
     "@types/jest": "^29.5.5",
     "@types/react": "^18.2.44",
+    "babel-preset-angular": "latest",
     "commitlint": "^17.0.2",
     "del-cli": "^5.1.0",
     "eslint": "^8.51.0",
@@ -137,7 +138,7 @@
           "quoteProps": "consistent",
           "singleQuote": true,
           "tabWidth": 2,
-          "endOfLine":"auto",
+          "endOfLine": "auto",
           "trailingComma": "es5",
           "useTabs": false
         }
