@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 // eslint-disable
-import { toast, ToastProvider } from 'rn-toast';
+import toast, { ToastProvider } from 'rn-toast';
 import { Button, SafeAreaView, View } from 'react-native';
 import { useState } from 'react';
 
@@ -13,7 +13,7 @@ export default function App() {
     >
       <ToastProvider
         config={{
-          position: 'top',
+          position: 'bottom',
           duration: 5000,
           stack: true,
         }}
@@ -28,7 +28,7 @@ const Examples = () => {
   const [count, setCount] = useState(0);
   const clickHandler = () => {
     setCount(count + 1);
-    toast.show({
+    toast({
       title: 'Hey there ' + count,
       // type: 'info',
     });
