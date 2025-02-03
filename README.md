@@ -5,7 +5,10 @@ A simple toast notification library for React Native and Expo Compactible.
 ## Installation
 
 ```sh
-npm install rn-toast
+npm install @originaltimi/rn-toast
+```
+```sh
+yarn add @originaltimi/rn-toast
 ```
 
 ## Usage
