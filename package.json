@@ -4,7 +4,7 @@
   "description": "A simple toast notification library for React Native and Expo Compactible.",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
-  "types": "./lib/typescript/module/index.d.ts",
+  "types": "./types/module/index.d.ts",
   "module": "./lib/module/index.js",
   "exports": {
     ".": {
@@ -43,7 +43,7 @@
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli lib",
-    "prepare": "bob build",
+    "prepare": "bob build ",
     "release": "release-it"
   },
   "keywords": [
