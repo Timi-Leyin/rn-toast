@@ -4,7 +4,7 @@
   "description": "A simple toast notification library for React Native and Expo Compactible.",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
-  "types": "./types/module/index.d.ts",
+  "types": "lib/typescript/commonjs/src/index.d.ts",
   "module": "./lib/module/index.js",
   "exports": {
     ".": {
