@@ -14,7 +14,7 @@ yarn add @originaltimi/rn-toast
 ## Usage
 
 ```js
-import toast, { ToastProvider } from 'rn-toast';
+import toast, { ToastProvider } from '@originaltimi/rn-toast';
 
 // ...
 
